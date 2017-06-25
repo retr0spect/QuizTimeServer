@@ -8,7 +8,7 @@ app.get('/', function (req, res) {
 })
 
 app.get('/dashbanner', function (req, res) {
-  res.json({"dash": "banner"});
+  res.json({"title": "Title", "message": "Message", "pos": "Positive Button"});
 })
 
 app.listen((process.env.PORT || 3000), function () {
