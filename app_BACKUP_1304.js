@@ -8,6 +8,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/dashbanner', function (req, res) {
+<<<<<<< HEAD
     res.json({
         "title": "Sale: 50% Off (Limited Time)",
         "message": "For limited time, get Quiz Time: Pro for 50% off regular price, i.e. only $0.5\n" +
@@ -22,7 +23,10 @@ app.get('/dashbanner', function (req, res) {
         "version": "1"
     });
 });
-
+=======
+  res.json({"title": "Title", "message": "Message", "pos": "Positive Button"});
+})
+>>>>>>> 22a897721499593523e0e18c32649d919a739db7
 
 app.listen((process.env.PORT || 3000), function () {
     console.log('Example app listening on port 3000!')
