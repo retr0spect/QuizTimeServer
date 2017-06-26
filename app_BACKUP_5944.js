@@ -23,6 +23,11 @@ app.get('/dashbanner', function (req, res) {
     });
 });
 
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> c3fa630ad04167234e081cd8fcb0dd27d1937d09
 app.listen((process.env.PORT || 3000), function () {
     console.log('Example app listening on port 3000!')
 });
