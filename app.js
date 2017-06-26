@@ -12,11 +12,11 @@ app.get('/dashbanner', function (req, res) {
         "title": "Sale: 50% Off (Limited Time)",
         "message": "For limited time, get Quiz Time: Pro for 50% off regular price, i.e. only $0.5\n\n" +
         "Quiz Time: Pro features:\n" +
-        "&#149; 30000 more unique questions. (Free version has 7500 only questions)\n" +
-        "&#149; 4 more game modes (Multi Topics, Millionaire, Non-Stop, 3-Difficulty)\n" +
-        "&#149; 11 more exciting Topics!\n" +
-        "&#149; No Advertisements\n" +
-        "&#149; Support a small developer pay his bills. :)",
+        "• 30000 more unique questions. (Free version has 7500 only questions)\n" +
+        "• 4 more game modes (Multi Topics, Millionaire, Non-Stop, 3-Difficulty)\n" +
+        "• 11 more exciting Topics!\n" +
+        "• No Advertisements\n" +
+        "• Support a small developer pay his bills. :)",
         "pos": "Get Pro",
         "show": "True",
         "version": "1"
