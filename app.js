@@ -1,6 +1,6 @@
+require('@risingstack/trace');
 const express = require('express');
 const app = express();
-require('@risingstack/trace');
 
 app.set('port', (process.env.PORT || 3000));
 
