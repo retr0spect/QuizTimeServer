@@ -1,4 +1,3 @@
-require('@risingstack/trace');
 const express = require('express');
 const app = express();
 
