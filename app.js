@@ -6,7 +6,7 @@ const app = express();
 app.set('port', (process.env.PORT || 3000));
 
 app.get('/', function (req, res) {
-    res.json({"foo": "bar"});
+    res.json({"quiz": "time"});
 });
 
 app.get('/dashbanner', function (req, res) {
@@ -21,7 +21,8 @@ app.get('/dashbanner', function (req, res) {
         "• Support a small developer! :)",
         "pos": "Get Pro",
         "show": "True",
-        "version": "1"
+        "version": "1",
+        "days": 3
     });
 });
 
