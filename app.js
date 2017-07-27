@@ -22,7 +22,7 @@ app.get('/dashbanner', function (req, res) {
         "pos": "Get Pro",
         "show": "True",
         "version": "1",
-        "days": 3
+        "days": 100
     });
 });
 
