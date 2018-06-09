@@ -1,7 +1,21 @@
-require('@risingstack/trace');
 
+const bodyParser = require('body-parser');
 const express = require('express');
+const mongoose = require('mongoose');
+
 const app = express();
+
+app.use(bodyParser.json()); // support json encoded bodies
+app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
+
+mongoose.connect('mongodb://admin:quiztimeuser101@ds153890.mlab.com:53890/quiztime');
+
+const WrongAnswer = mongoose.model('WrongAnswer', { 
+    id: String,
+    question: String,
+    currentAnswer: String,
+    suggestedAnswer: String
+});
 
 app.set('port', (process.env.PORT || 3000));
 
@@ -25,6 +39,22 @@ app.get('/dashbanner', function (req, res) {
         "days": 5
     });
 });
+
+app.get('/factual', function (req, res) {
+    res.json({
+        "title": "Factual Quiz",
+        "message": "Please check out my exciting new trivia game 'Factual Quiz'",
+        "show": "True",
+        "version": "1",
+        "days": 7
+    });
+});
+
+app.post('/reportWrongAnswer', function(req, res) {
+    const wa = new WrongAnswer(req.body);
+    wa.save().then(() => res.json({"response": "Saved!"}));
+});
+
 
 app.listen((process.env.PORT || 3000), function () {
     console.log('Example app listening on port 3000!')

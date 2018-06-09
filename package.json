@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "@risingstack/trace": "^3.14.0",
-    "express": "^4.15.3"
+    "body-parser": "^1.18.3",
+    "express": "^4.15.3",
+    "mongoose": "^5.1.4"
   }
 }
